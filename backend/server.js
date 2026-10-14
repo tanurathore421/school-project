@@ -27,7 +27,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3001",
-      "https://YOUR-FRONTEND.vercel.app",
+    "https://school-project-khaki-two.vercel.app",
     ],
     credentials: true,
   })
