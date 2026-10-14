@@ -1,0 +1,360 @@
+/* ================= STUDENT LAYOUT ================= */
+
+.student-layout {
+  min-height: 100vh;
+  width: 100%;
+  background: #f4f7fb;
+  font-family: Arial, sans-serif;
+}
+
+
+/* ================= SIDEBAR ================= */
+
+.student-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 250px;
+  height: 100vh;
+  min-height: 100vh;
+
+  background: #1f2937;
+  color: white;
+
+  padding: 25px 15px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.school-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px 30px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.school-logo span:first-child {
+  font-size: 28px;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.student-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.student-nav a {
+  text-decoration: none;
+  color: #cbd5e1;
+
+  padding: 13px 14px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.student-nav a:hover {
+  background: #4b5563;
+  color: white;
+}
+
+.student-nav a.active {
+  background: #4b5563;
+  color: white;
+}
+
+.student-nav span {
+  font-size: 19px;
+  width: 25px;
+}
+
+
+/* ================= LOGOUT ================= */
+
+.logout-btn {
+  margin-top: auto;
+
+  border: none;
+  background: transparent;
+  color: #cbd5e1;
+
+  padding: 13px 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.logout-btn:hover {
+  background: #4b5563;
+  color: white;
+}
+
+.logout-btn span {
+  font-size: 19px;
+  width: 25px;
+}
+
+
+/* ================= MAIN CONTENT ================= */
+
+.student-main {
+  margin-left: 250px;
+
+  min-height: 100vh;
+
+  padding: 35px 45px;
+  box-sizing: border-box;
+}
+
+
+/* ================= DASHBOARD ================= */
+
+.student-dashboard {
+  width: 100%;
+}
+
+
+/* ================= TOP BAR ================= */
+
+.student-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 35px;
+}
+
+.student-topbar h1 {
+  margin: 0 0 8px;
+
+  font-size: 30px;
+  color: #111827;
+}
+
+.student-topbar p {
+  margin: 0;
+  color: #64748b;
+}
+
+
+/* ================= PROFILE ================= */
+
+.student-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: white;
+
+  padding: 10px 16px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.profile-icon {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: #e5e7eb;
+  color: #374151;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+}
+
+.student-profile strong {
+  display: block;
+
+  color: #111827;
+  font-size: 14px;
+}
+
+.student-profile span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #64748b;
+  font-size: 12px;
+}
+
+
+/* ================= DASHBOARD CARDS ================= */
+
+.dashboard-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 22px;
+
+  width: 100%;
+  max-width: 1100px;
+}
+
+.dashboard-card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 14px;
+
+  min-height: 190px;
+
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+
+  transition: 0.25s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.1);
+}
+
+
+/* ================= CARD ICON ================= */
+
+.card-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 12px;
+
+  background: #eff6ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+
+  font-size: 28px;
+}
+
+
+/* ================= CARD CONTENT ================= */
+
+.card-content h2 {
+  margin: 0 0 8px;
+
+  font-size: 20px;
+  color: #111827;
+}
+
+.card-content p {
+  margin: 0 0 20px;
+
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.dashboard-card button {
+  border: none;
+
+  background: #2563eb;
+  color: white;
+
+  padding: 10px 18px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.dashboard-card button:hover {
+  background: #1d4ed8;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+  .student-sidebar {
+    width: 210px;
+  }
+
+  .student-main {
+    margin-left: 210px;
+    padding: 25px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 650px) {
+
+  .student-sidebar {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    min-height: auto;
+  }
+
+  .student-main {
+    margin-left: 0;
+
+    padding: 20px;
+  }
+
+  .student-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logout-btn {
+    margin-top: 15px;
+  }
+
+  .student-topbar {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}

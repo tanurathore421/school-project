@@ -1,0 +1,184 @@
+.student-timetable-page {
+  width: 100%;
+}
+
+/* =========================
+   Header
+========================= */
+
+.student-timetable-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.student-timetable-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #172033;
+}
+
+.student-timetable-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.student-timetable-icon {
+  width: 50px;
+  height: 50px;
+  background: #e0e7ff;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+}
+
+/* =========================
+   Timetable Container
+========================= */
+
+.student-weekly-timetable-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+/* =========================
+   Table Header
+========================= */
+
+.student-weekly-timetable-header {
+  padding: 20px 25px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.student-weekly-timetable-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #172033;
+}
+
+/* =========================
+   Table Wrapper
+========================= */
+
+.student-weekly-timetable-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* =========================
+   Table
+========================= */
+
+.student-weekly-timetable {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+
+.student-weekly-timetable th,
+.student-weekly-timetable td {
+  border: 1px solid #dbe3ef;
+  text-align: center;
+}
+
+/* =========================
+   Table Head
+========================= */
+
+.student-weekly-timetable thead th {
+  background: #eff6ff;
+  padding: 15px 10px;
+
+  font-size: 13px;
+  color: #172033;
+}
+
+.student-weekly-timetable thead small {
+  display: block;
+  margin-top: 6px;
+
+  font-size: 11px;
+  font-weight: normal;
+  color: #64748b;
+}
+
+/* =========================
+   Table Body
+========================= */
+
+.student-weekly-timetable tbody td {
+  height: 75px;
+  padding: 8px;
+}
+
+/* =========================
+   Day Column
+========================= */
+
+.student-day-column {
+  width: 100px;
+  background: #f8fafc;
+  color: #172033;
+  font-size: 13px;
+}
+
+/* =========================
+   Subject
+========================= */
+
+.student-subject-cell {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-subject-cell strong {
+  font-size: 13px;
+  color: #172033;
+}
+
+/* =========================
+   Empty Period
+========================= */
+
+.empty-period {
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+/* =========================
+   Loading
+========================= */
+
+.student-timetable-loading {
+  padding: 40px;
+  text-align: center;
+  color: #64748b;
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 700px) {
+  .student-timetable-header {
+    align-items: flex-start;
+  }
+
+  .student-timetable-header h1 {
+    font-size: 25px;
+  }
+
+  .student-weekly-timetable-container {
+    width: 100%;
+  }
+}

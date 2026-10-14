@@ -1,0 +1,137 @@
+.student-result-page {
+  width: 100%;
+}
+
+/* =========================
+   Header
+========================= */
+
+.student-result-header {
+  margin-bottom: 25px;
+}
+
+.student-result-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #172033;
+}
+
+.student-result-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+/* =========================
+   Summary Cards
+========================= */
+
+.result-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.result-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+}
+
+.result-card h3 {
+  margin: 0 0 18px;
+  font-size: 18px;
+  color: #172033;
+}
+
+.result-card p {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
+  color: #172554;
+}
+
+/* =========================
+   Result Table Container
+========================= */
+
+.student-result-table-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+}
+
+/* =========================
+   Result Table
+========================= */
+
+.student-result-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.student-result-table th,
+.student-result-table td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Table Heading */
+
+.student-result-table th {
+  background: #eff6ff;
+  color: #172033;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Table Data */
+
+.student-result-table td {
+  color: #475569;
+  font-size: 14px;
+}
+
+/* Hover */
+
+.student-result-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* Last Row */
+
+.student-result-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 1000px) {
+  .result-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .result-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .student-result-header h1 {
+    font-size: 25px;
+  }
+
+  .result-card {
+    padding: 20px;
+  }
+
+  .student-result-table-container {
+    overflow-x: auto;
+  }
+}

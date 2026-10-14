@@ -1,0 +1,81 @@
+.admin-marks {
+  padding: 10px;
+}
+
+.admin-marks h1 {
+  margin-bottom: 25px;
+}
+
+.marks-form-section,
+.marks-table-section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.marks-form-section h2,
+.marks-table-section h2 {
+  margin-bottom: 20px;
+}
+
+.marks-form-section form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.marks-form-section select,
+.marks-form-section input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 150px;
+}
+
+.marks-form-section button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.marks-form-section button:hover {
+  background: #1d4ed8;
+}
+
+.marks-table-wrapper {
+  overflow-x: auto;
+}
+
+.marks-table-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.marks-table-section th,
+.marks-table-section td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.marks-table-section th {
+  background: #f3f4f6;
+}
+
+.delete-btn {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}

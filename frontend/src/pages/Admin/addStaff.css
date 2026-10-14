@@ -1,0 +1,80 @@
+.add-staff-page {
+  padding: 10px;
+  max-width: 800px;
+}
+
+.add-staff-page h1 {
+  margin-bottom: 5px;
+}
+
+.add-staff-page > p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.add-staff-form {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.cancel-btn,
+.save-staff-btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #e5e7eb;
+  color: #333;
+}
+
+.save-staff-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.save-staff-btn:hover {
+  background: #1d4ed8;
+}
+
+.staff-message {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 6px;
+}

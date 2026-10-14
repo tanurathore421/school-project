@@ -1,0 +1,133 @@
+/* MAIN ADMIN LAYOUT */
+
+.admin-layout {
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+/* SIDEBAR */
+
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 240px;
+  height: 100vh;
+
+  background: #1f2937;
+  color: white;
+
+  padding: 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1000;
+
+  overflow-y: auto;
+}
+
+
+/* SIDEBAR HEADER */
+
+.admin-sidebar-header {
+  margin-bottom: 30px;
+}
+
+.admin-sidebar-header h2 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+
+/* SIDEBAR NAVIGATION */
+
+.admin-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-sidebar-nav a {
+  display: block;
+
+  color: white;
+  text-decoration: none;
+
+  padding: 12px;
+
+  border-radius: 6px;
+
+  background: transparent;
+}
+
+.admin-sidebar-nav a:hover {
+  background: #374151;
+}
+
+.admin-sidebar-nav a.active {
+  background: #4b5563;
+}
+
+
+/* LOGOUT BUTTON */
+
+.admin-logout-btn {
+  display: block;
+
+  margin-top: auto;
+
+  width: 100%;
+
+  padding: 11px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #dc2626;
+
+  color: white;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+.admin-logout-btn:hover {
+  background: #b91c1c;
+}
+
+
+/* MAIN CONTENT */
+
+.admin-main {
+  margin-left: 240px;
+
+  min-height: 100vh;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  background: #f5f6f8;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .admin-sidebar {
+    width: 210px;
+  }
+
+  .admin-main {
+    margin-left: 210px;
+    padding: 15px;
+  }
+
+}

@@ -1,0 +1,186 @@
+.staff-marks-page {
+  width: 100%;
+}
+
+/* Header */
+
+.marks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.marks-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #172033;
+}
+
+.marks-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.marks-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: #e0e7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+/* Controls */
+
+.marks-controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.marks-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.marks-field label {
+  font-size: 13px;
+  color: #475569;
+  font-weight: 500;
+}
+
+.marks-field select {
+  width: 160px;
+  padding: 10px 12px;
+  border: 1px solid #dbe2ea;
+  border-radius: 7px;
+  outline: none;
+  background: white;
+  color: #334155;
+}
+
+.load-marks-btn {
+  border: none;
+  background: #172554;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.load-marks-btn:hover {
+  background: #1e3a8a;
+}
+
+/* Table */
+
+.marks-table-container {
+  background: white;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+}
+
+.marks-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.marks-table th {
+  text-align: left;
+  padding: 16px 18px;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 13px;
+}
+
+.marks-table td {
+  padding: 16px 18px;
+  border-top: 1px solid #eef2f7;
+  color: #475569;
+  font-size: 14px;
+}
+
+.marks-student {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #172033;
+  font-weight: 500;
+}
+
+.marks-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #e0e7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marks-table input {
+  width: 75px;
+  padding: 9px;
+  border: 1px solid #dbe2ea;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.marks-table input:focus {
+  border-color: #172554;
+}
+
+.save-marks-btn {
+  border: none;
+  background: #172554;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.save-marks-btn:hover {
+  background: #1e3a8a;
+}
+
+/* Mobile */
+
+@media (max-width: 850px) {
+  .marks-controls {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .marks-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .marks-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .marks-field select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .load-marks-btn {
+    width: 100%;
+  }
+}

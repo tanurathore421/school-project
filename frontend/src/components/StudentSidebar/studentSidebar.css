@@ -1,0 +1,140 @@
+.student-common-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 250px;
+  height: 100vh;
+  min-height: 100vh;
+
+  background: #172554;
+  color: white;
+
+  padding: 25px 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  z-index: 1000;
+
+  overflow-y: auto;
+}
+
+/* Logo */
+
+.student-common-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px 30px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.student-common-logo span:first-child {
+  font-size: 28px;
+}
+
+/* Navigation */
+
+.student-common-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.student-common-nav a {
+  text-decoration: none;
+  color: #cbd5e1;
+  padding: 13px 14px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.student-common-nav a:hover {
+  background: #1e3a8a;
+  color: white;
+}
+
+.student-common-nav a span {
+  font-size: 19px;
+  width: 25px;
+}
+
+/* Logout */
+
+.student-common-logout {
+  margin-top: auto;
+  border: none;
+  background: transparent;
+  color: #cbd5e1;
+  padding: 13px 14px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.student-common-logout:hover {
+  background: #1e3a8a;
+  color: white;
+}
+
+.student-common-logout span {
+  font-size: 19px;
+  width: 25px;
+}
+
+
+/* MAIN STUDENT CONTENT */
+
+.student-common-main {
+  margin-left: 250px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .student-common-sidebar {
+    width: 210px;
+  }
+
+  .student-common-main {
+    margin-left: 210px;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .student-common-sidebar {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    position: relative;
+  }
+
+  .student-common-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .student-common-logout {
+    margin-top: 15px;
+  }
+
+  .student-common-main {
+    margin-left: 0;
+  }
+}

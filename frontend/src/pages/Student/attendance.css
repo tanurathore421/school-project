@@ -1,0 +1,186 @@
+/* ================= ATTENDANCE PAGE ================= */
+
+.student-attendance-page {
+  width: 100%;
+}
+
+
+/* ================= HEADER ================= */
+
+.student-attendance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.student-attendance-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #172033;
+}
+
+.student-attendance-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+
+/* ================= MONTH SELECTOR ================= */
+
+.attendance-month-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.attendance-month-selector label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #172033;
+}
+
+.attendance-month-selector input {
+  padding: 9px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: white;
+  color: #172033;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.attendance-month-selector input:focus {
+  border-color: #64748b;
+}
+
+
+/* ================= SUMMARY ================= */
+
+.attendance-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.attendance-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+}
+
+.attendance-card h3 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.attendance-card p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #172033;
+}
+
+
+/* ================= TABLE CONTAINER ================= */
+
+.student-attendance-table-container {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+
+  overflow-x: auto;
+}
+
+
+/* ================= TABLE ================= */
+
+.student-attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.student-attendance-table th {
+  text-align: left;
+  padding: 15px 18px;
+  background: #f8fafc;
+  color: #172033;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.student-attendance-table td {
+  padding: 15px 18px;
+  color: #475569;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.student-attendance-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+
+/* ================= STATUS ================= */
+
+.student-attendance-table td:last-child {
+  font-weight: 600;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+  .attendance-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .student-attendance-header {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 650px) {
+
+  .student-attendance-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .attendance-month-selector {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .attendance-month-selector input {
+    flex: 1;
+    max-width: 180px;
+  }
+
+  .attendance-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .attendance-card {
+    padding: 18px;
+  }
+
+  .student-attendance-table-container {
+    overflow-x: auto;
+  }
+
+}

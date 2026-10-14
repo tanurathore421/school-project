@@ -1,0 +1,105 @@
+.admin-results {
+  padding: 10px;
+}
+
+.admin-results h1 {
+  margin-bottom: 8px;
+}
+
+.results-form-section,
+.results-table-section {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.results-form-section h2,
+.results-table-section h2 {
+  margin-bottom: 18px;
+}
+
+.results-form-section form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.results-form-section input,
+.results-form-section select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.results-form-section input:focus,
+.results-form-section select:focus {
+  outline: none;
+  border-color: #4b5563;
+}
+
+.results-form-section button {
+  grid-column: 1 / -1;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.results-form-section button:hover {
+  background: #1d4ed8;
+}
+
+.results-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.results-table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 950px;
+}
+
+.results-table-wrapper th,
+.results-table-wrapper td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.results-table-wrapper th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+.results-table-wrapper tr:hover {
+  background: #f9fafb;
+}
+
+.delete-result-btn {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-result-btn:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 768px) {
+  .results-form-section form {
+    grid-template-columns: 1fr;
+  }
+}

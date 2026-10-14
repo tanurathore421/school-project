@@ -1,0 +1,52 @@
+.admin-dashboard {
+  padding: 10px;
+}
+
+.admin-dashboard h1 {
+  margin-bottom: 8px;
+}
+
+.admin-dashboard > p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.admin-dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.admin-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-card h3 {
+  margin-bottom: 10px;
+}
+
+.admin-card p {
+  color: #666;
+}
+
+
+
+
+
+.admin-card {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.admin-card:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+}

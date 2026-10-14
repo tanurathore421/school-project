@@ -1,0 +1,130 @@
+.admin-notices {
+  padding: 10px;
+}
+
+.admin-notices h1 {
+  margin-bottom: 8px;
+}
+
+.notice-form-section,
+.notice-list-section {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.notice-form-section h2,
+.notice-list-section h2 {
+  margin-bottom: 18px;
+}
+
+.notice-form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notice-form-section input,
+.notice-form-section textarea,
+.notice-form-section select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.notice-form-section textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.notice-form-section input:focus,
+.notice-form-section textarea:focus,
+.notice-form-section select:focus {
+  outline: none;
+  border-color: #4b5563;
+}
+
+.notice-form-section button {
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.notice-form-section button:hover {
+  background: #1d4ed8;
+}
+
+.notice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notice-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+.notice-card-content {
+  flex: 1;
+}
+
+.notice-card h3 {
+  margin: 0 0 10px;
+}
+
+.notice-card p {
+  margin: 0 0 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.notice-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 13px;
+  color: #666;
+}
+.delete-notice-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  width: auto;
+  min-width: 70px;
+}
+
+.delete-notice-btn:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 768px) {
+  .notice-card {
+    flex-direction: column;
+  }
+
+  .delete-notice-btn {
+    width: 100%;
+  }
+}

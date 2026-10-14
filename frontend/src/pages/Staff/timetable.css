@@ -1,0 +1,311 @@
+.staff-timetable-page {
+  width: 100%;
+}
+
+/* Header */
+
+.timetable-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.timetable-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #172033;
+}
+
+.timetable-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.timetable-icon {
+  width: 50px;
+  height: 50px;
+  background: #e0e7ff;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+}
+
+
+/* Filters */
+
+.timetable-filters {
+  background: white;
+  padding: 24px 20px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+.timetable-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.timetable-field label {
+  font-size: 13px;
+  color: #334155;
+  font-weight: 500;
+}
+
+.timetable-field select,
+.timetable-field input {
+  width: 160px;
+  height: 40px;
+
+  padding: 0 12px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+
+  background: white;
+  color: #172554;
+
+  box-sizing: border-box;
+}
+
+.timetable-field input {
+  width: 190px;
+}
+
+
+/* Buttons */
+
+.view-timetable-btn,
+.add-timetable-btn,
+.save-timetable-btn {
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+
+  padding: 0 15px;
+
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.view-timetable-btn {
+  background: #172554;
+  color: white;
+}
+
+.view-timetable-btn:hover {
+  background: #1e3a8a;
+}
+
+.add-timetable-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.add-timetable-btn:hover {
+  background: #15803d;
+}
+
+
+/* Add Form */
+
+.timetable-form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.timetable-form h2 {
+  margin: 0 0 20px;
+  font-size: 20px;
+  color: #172033;
+}
+
+.timetable-form-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.save-timetable-btn {
+  background: #172554;
+  color: white;
+}
+
+.save-timetable-btn:hover {
+  background: #1e3a8a;
+}
+
+
+/* Weekly Timetable */
+
+.weekly-timetable-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+.weekly-timetable-header {
+  padding: 20px 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.weekly-timetable-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #172033;
+}
+
+.weekly-timetable-header span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+/* Table */
+
+.weekly-timetable-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.weekly-timetable {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+
+.weekly-timetable th,
+.weekly-timetable td {
+  border: 1px solid #dbe3ef;
+  text-align: center;
+}
+
+.weekly-timetable thead th {
+  background: #eff6ff;
+  padding: 15px 10px;
+  font-size: 13px;
+  color: #172033;
+}
+
+.weekly-timetable thead small {
+  display: block;
+  margin-top: 6px;
+
+  font-size: 11px;
+  font-weight: normal;
+  color: #64748b;
+}
+
+.weekly-timetable tbody td {
+  height: 75px;
+  padding: 8px;
+}
+
+.day-column {
+  width: 100px;
+  background: #f8fafc;
+  color: #172033;
+  font-size: 13px;
+}
+
+
+/* Subject Cell */
+
+.subject-cell {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+}
+
+.subject-cell strong {
+  font-size: 13px;
+  color: #172033;
+}
+
+.cell-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 13px;
+  padding: 3px;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  transform: scale(1.1);
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .timetable-filters {
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .timetable-form-row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .staff-timetable-page {
+    width: 100%;
+  }
+
+  .timetable-header {
+    align-items: flex-start;
+  }
+
+  .timetable-header h1 {
+    font-size: 25px;
+  }
+
+  .timetable-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .timetable-field select,
+  .timetable-field input {
+    width: 100%;
+  }
+
+  .view-timetable-btn,
+  .add-timetable-btn {
+    width: 100%;
+  }
+}

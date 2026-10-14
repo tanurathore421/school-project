@@ -1,0 +1,292 @@
+.admin-timetable {
+  padding: 10px;
+}
+
+/* HEADER */
+
+.admin-timetable-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-timetable-header h1 {
+  margin: 0;
+}
+
+.admin-timetable-header p {
+  color: #666;
+  margin: 0;
+}
+
+/* CLASS + SECTION */
+
+.timetable-selection {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.timetable-selection div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.timetable-selection label {
+  font-weight: 600;
+}
+
+.timetable-selection select {
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background: white;
+}
+
+/* ADD / EDIT FORM */
+
+.admin-timetable-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-timetable-form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.form-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-grid label {
+  font-weight: 600;
+}
+
+.form-grid select {
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background: white;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 5px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-buttons button:hover {
+  background: #1d4ed8;
+}
+
+.form-buttons .cancel-btn {
+  background: #6b7280;
+}
+
+.form-buttons .cancel-btn:hover {
+  background: #4b5563;
+}
+
+/* WEEKLY TIMETABLE */
+
+.weekly-timetable {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.weekly-header {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.weekly-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.timetable-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.timetable-scroll table {
+  width: 100%;
+  min-width: 950px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* HEADER CELLS */
+
+.timetable-scroll th {
+  background: #eef5ff;
+  border: 1px solid #d5dfec;
+  padding: 12px 8px;
+  text-align: center;
+  font-size: 14px;
+  height: 45px;
+}
+
+.timetable-scroll th:first-child {
+  width: 100px;
+}
+
+.time-start {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.time-end {
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+/* DAY COLUMN */
+
+.day-cell {
+  background: #f8fafc;
+  border: 1px solid #d5dfec;
+  text-align: center;
+  font-weight: 600;
+  padding: 15px 8px;
+  width: 100px;
+}
+
+/* TIMETABLE CELLS */
+
+.timetable-cell {
+  height: 85px;
+  border: 1px solid #d5dfec;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+  background: white;
+}
+
+.class-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 4px;
+}
+
+.class-content strong {
+  font-size: 14px;
+  color: #111827;
+}
+
+.class-content span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* EMPTY CELL */
+
+.empty-cell {
+  color: #555;
+  font-size: 14px;
+}
+
+/* EDIT + DELETE INSIDE CELL */
+
+.cell-actions {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 3px;
+}
+
+.edit-cell-btn,
+.delete-cell-btn {
+  border: none;
+  border-radius: 4px;
+  padding: 4px 7px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.edit-cell-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.edit-cell-btn:hover {
+  background: #1d4ed8;
+}
+
+.delete-cell-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.delete-cell-btn:hover {
+  background: #b91c1c;
+}
+
+/* SELECT MESSAGE */
+
+.select-message {
+  padding: 50px 20px;
+  text-align: center;
+  color: #666;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .admin-timetable-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .timetable-selection {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timetable-scroll {
+    overflow-x: auto;
+  }
+}

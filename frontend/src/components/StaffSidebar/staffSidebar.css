@@ -1,0 +1,122 @@
+.staff-common-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 250px;
+  height: 100vh;
+  min-height: 100vh;
+
+  background: #172554;
+  color: white;
+
+  padding: 25px 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  z-index: 1000;
+
+  overflow-y: auto;
+}
+
+.staff-common-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px 30px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.staff-common-logo span:first-child {
+  font-size: 28px;
+}
+
+.staff-common-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.staff-common-nav a {
+  text-decoration: none;
+  color: #cbd5e1;
+  padding: 13px 14px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.staff-common-nav a:hover {
+  background: #1e3a8a;
+  color: white;
+}
+
+.staff-common-nav a span {
+  font-size: 19px;
+  width: 25px;
+}
+
+.staff-common-logout {
+  margin-top: auto;
+  border: none;
+  background: transparent;
+  color: #cbd5e1;
+  padding: 13px 14px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.staff-common-logout:hover {
+  background: #1e3a8a;
+  color: white;
+}
+
+.staff-common-logout span {
+  font-size: 19px;
+  width: 25px;
+}
+
+
+/* MAIN STAFF CONTENT */
+
+.staff-common-main {
+  margin-left: 250px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .staff-common-sidebar {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    position: relative;
+  }
+
+  .staff-common-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .staff-common-logout {
+    margin-top: 15px;
+  }
+
+  .staff-common-main {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,163 @@
+.add-student-page {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  background: #f5f7fb;
+}
+
+.add-student-card {
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 28px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 14px rgba(15, 23, 42, 0.05);
+}
+
+.back-btn {
+  margin-bottom: 20px;
+  padding: 8px 0;
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-student-card h1 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 27px;
+}
+
+.form-description {
+  margin: 0 0 24px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.student-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.student-form-group {
+  min-width: 0;
+  margin-bottom: 18px;
+}
+
+.student-form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.student-form-group input,
+.student-form-group textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  color: #111827;
+  font: inherit;
+  outline: none;
+}
+
+.student-form-group input:focus,
+.student-form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.student-form-group textarea {
+  resize: vertical;
+}
+
+.address-group {
+  margin-top: 2px;
+}
+
+.form-error {
+  margin-bottom: 18px;
+  padding: 12px;
+  border-radius: 6px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+.student-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.cancel-student-btn,
+.submit-student-btn {
+  padding: 11px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-student-btn {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #374151;
+}
+
+.submit-student-btn {
+  border: 1px solid #2563eb;
+  background: #2563eb;
+  color: #fff;
+}
+
+.submit-student-btn:hover {
+  background: #1d4ed8;
+}
+
+.submit-student-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .add-student-page {
+    padding: 12px;
+  }
+
+  .add-student-card {
+    padding: 18px;
+  }
+
+  .add-student-card h1 {
+    font-size: 23px;
+  }
+
+  .student-form-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .student-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .cancel-student-btn,
+  .submit-student-btn {
+    width: 100%;
+  }
+}

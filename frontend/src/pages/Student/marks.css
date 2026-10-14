@@ -1,0 +1,57 @@
+.student-marks-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.student-marks-header {
+  margin-bottom: 30px;
+}
+
+.student-marks-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #172033;
+}
+
+.student-marks-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.student-marks-table-container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+  overflow-x: auto;
+}
+
+.student-marks-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.student-marks-table th,
+.student-marks-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.student-marks-table th {
+  background: #eff6ff;
+  color: #172033;
+  font-size: 14px;
+}
+
+.student-marks-table td {
+  color: #475569;
+  font-size: 14px;
+}
+
+.student-marks-table tbody tr:hover {
+  background: #f8fafc;
+}
