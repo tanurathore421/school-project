@@ -106,7 +106,7 @@
   padding: 8px 14px;
   border: none;
   border-radius: 5px;
-  background: #dc2626;
+  background: #dc2626 !important;
   color: white;
   cursor: pointer;
   font-size: 14px;

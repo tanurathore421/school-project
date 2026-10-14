@@ -16,6 +16,9 @@ import AdminMarks from "./pages/Admin/adminMarks";
 import AdminResults from "./pages/Admin/results";
 import AdminNotices from "./pages/Admin/notices";
 import AdminTimetable from "./pages/Admin/timetable";
+import AddStaff from "./pages/Admin/addStaff";
+import EditStaff from "./pages/Admin/editStaff";
+import EditStudent from "./pages/Admin/editStudent";
 
 import StaffDashboard from "./pages/Staff/staffDashboard";
 import StaffProtectedRoute from "./components/staffProtectedRoute";
@@ -26,8 +29,7 @@ import StaffMarks from "./pages/Staff/marks";
 import StaffTimetable from "./pages/Staff/timetable";
 import StaffNotices from "./pages/Staff/notice";
 import StaffResults from "./pages/Staff/results";
-import AddStaff from "./pages/Admin/addStaff";
-import EditStaff from "./pages/Admin/editStaff";
+
 
 import StudentLayout from "./components/Layout/studentLayout";
 import StudentDashboard from "./pages/Student/studentDashboard";
@@ -61,6 +63,7 @@ function App() {
           <Route index element={<AdminDashboard />} />
           <Route path="students" element={<AdminStudents />} />
           <Route path="students/add" element={<AddStudent />} />
+          <Route path="students/edit/:id" element={<EditStudent />} />
           <Route path="staff" element={<AdminStaff />} />
           <Route path="staff/add" element={<AddStaff />} />
           <Route path="staff/edit/:id" element={<EditStaff />} />

@@ -1,0 +1,112 @@
+
+.edit-student {
+  width: 100%;
+  max-width: 750px;
+  margin: 25px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.edit-student h2 {
+  margin: 0 0 25px;
+  color: #1e293b;
+  font-size: 25px;
+  text-align: center;
+}
+
+.edit-student form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.edit-student form > div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.edit-student label {
+  margin-bottom: 7px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.edit-student input,
+.edit-student textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.edit-student input:focus,
+.edit-student textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.edit-student textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.edit-student button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-student button[type="submit"] {
+  background: #2563eb;
+  color: white;
+  height: 44px;
+ 
+}
+
+.edit-student button[type="submit"]:hover {
+  background: #1d4ed8;
+}
+
+.edit-student button[type="button"] {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.edit-student button[type="button"]:hover {
+  background: #cbd5e1;
+}
+
+/* Tablet and mobile */
+@media (max-width: 600px) {
+  .edit-student {
+    margin: 12px auto;
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .edit-student h2 {
+    font-size: 21px;
+  }
+
+  .edit-student form {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .edit-student button {
+    width: 100%;
+  }
+}

@@ -7,6 +7,7 @@ const roleMiddleware = require("../middlewares/roleMiddleware");
 
 const {
   getStudents,
+  getStudentById,
   createStudent,
   updateStudent,
   deleteStudent,
@@ -44,6 +45,7 @@ router.use(authMiddleware, roleMiddleware("admin"));
 // Student routes
 router.get("/students", getStudents);
 router.post("/students", createStudent);
+router.get("/students/:id", getStudentById);
 router.put("/students/:id", updateStudent);
 
 // DELETE student

@@ -64,12 +64,12 @@
 }
 
 .edit-btn {
-  background: #f59e0b;
+  background: #f59e0b !important;
   color: white;
 }
 
 .delete-btn {
-  background: #dc2626;
+  background: #dc2626 !important;
   color: white;
 }
 
