@@ -45,7 +45,7 @@ function Timetable() {
 
     try {
       const response = await axios.get(
-        `http://localhost:3000/api/staff/timetable?className=${selectedClass}&section=${selectedSection}`,
+        ` https://school-project-ql8x.onrender.com/api/staff/timetable?className=${selectedClass}&section=${selectedSection}`,
         {
           withCredentials: true,
         },
@@ -105,7 +105,7 @@ function Timetable() {
     try {
       if (editingId) {
         await axios.put(
-          `http://localhost:3000/api/staff/timetable/${editingId}`,
+          ` https://school-project-ql8x.onrender.com/api/staff/timetable/${editingId}`,
           {
             className: selectedClass,
             section: selectedSection,
@@ -121,7 +121,7 @@ function Timetable() {
         alert("Timetable updated successfully");
       } else {
         await axios.post(
-          "http://localhost:3000/api/staff/timetable",
+          " https://school-project-ql8x.onrender.com/api/staff/timetable",
           {
             className: selectedClass,
             section: selectedSection,
@@ -165,7 +165,7 @@ function Timetable() {
     }
 
     try {
-      await axios.delete(`http://localhost:3000/api/staff/timetable/${id}`, {
+      await axios.delete(` https://school-project-ql8x.onrender.com/api/staff/timetable/${id}`, {
         withCredentials: true,
       });
 

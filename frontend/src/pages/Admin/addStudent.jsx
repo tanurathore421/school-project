@@ -37,7 +37,7 @@ function AddStudent() {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/admin/students",
+        " https://school-project-ql8x.onrender.com/api/admin/students",
         formData,
         { withCredentials: true }
       );

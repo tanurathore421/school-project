@@ -11,7 +11,7 @@ function Students() {
   const fetchStudents = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/admin/students",
+        " https://school-project-ql8x.onrender.com/api/admin/students",
         { withCredentials: true }
       );
 
@@ -37,7 +37,7 @@ function Students() {
 
     try {
       await axios.delete(
-        `http://localhost:3000/api/admin/students/${id}`,
+        ` https://school-project-ql8x.onrender.com/api/admin/students/${id}`,
         { withCredentials: true }
       );
 
@@ -143,7 +143,7 @@ function Students() {
   const fetchStudents = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/admin/students",
+        " https://school-project-ql8x.onrender.com/api/admin/students",
         {
           withCredentials: true,
         }

@@ -7,7 +7,7 @@ function StudentSidebar() {
     const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:3000/api/auth/logout",
+        " https://school-project-ql8x.onrender.com/api/auth/logout",
         {},
         {
           withCredentials: true,

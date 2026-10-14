@@ -20,7 +20,7 @@ function AdminMarks() {
   const fetchStudents = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/admin/students",
+        " https://school-project-ql8x.onrender.com/api/admin/students",
         { withCredentials: true }
       );
 
@@ -33,7 +33,7 @@ function AdminMarks() {
   const fetchMarks = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/admin/marks",
+        " https://school-project-ql8x.onrender.com/api/admin/marks",
         { withCredentials: true }
       );
 
@@ -48,7 +48,7 @@ function AdminMarks() {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/admin/marks",
+        " https://school-project-ql8x.onrender.com/api/admin/marks",
         {
           student: studentId,
           subject,
@@ -84,7 +84,7 @@ function AdminMarks() {
 
     try {
       await axios.delete(
-        `http://localhost:3000/api/admin/marks/${id}`,
+        ` https://school-project-ql8x.onrender.com/api/admin/marks/${id}`,
         {
           withCredentials: true,
         }

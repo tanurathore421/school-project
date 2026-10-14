@@ -23,7 +23,7 @@ function EditStaff() {
     const fetchStaff = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/admin/staff",
+          " https://school-project-ql8x.onrender.com/api/admin/staff",
           {
             withCredentials: true,
           }
@@ -67,7 +67,7 @@ function EditStaff() {
 
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/admin/staff/${id}`,
+        ` https://school-project-ql8x.onrender.com/api/admin/staff/${id}`,
         formData,
         {
           withCredentials: true,

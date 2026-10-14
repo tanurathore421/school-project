@@ -16,7 +16,7 @@ function AdminNotices() {
   const fetchNotices = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/admin/notices",
+        " https://school-project-ql8x.onrender.com/api/admin/notices",
         { withCredentials: true }
       );
 
@@ -31,7 +31,7 @@ function AdminNotices() {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/admin/notices",
+        " https://school-project-ql8x.onrender.com/api/admin/notices",
         {
           title,
           message,
@@ -61,7 +61,7 @@ function AdminNotices() {
 
     try {
       await axios.delete(
-        `http://localhost:3000/api/admin/notices/${id}`,
+        ` https://school-project-ql8x.onrender.com/api/admin/notices/${id}`,
         { withCredentials: true }
       );
 

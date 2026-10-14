@@ -20,7 +20,7 @@ function Attendance() {
       setLoading(true);
 
       const response = await axios.get(
-        `http://localhost:3000/api/staff/students?className=${selectedClass}&section=${selectedSection}`,
+        ` https://school-project-ql8x.onrender.com/api/staff/students?className=${selectedClass}&section=${selectedSection}`,
         {
           withCredentials: true,
         }
@@ -59,7 +59,7 @@ function Attendance() {
     try {
       for (const student of students) {
         await axios.post(
-          "http://localhost:3000/api/staff/attendance",
+          " https://school-project-ql8x.onrender.com/api/staff/attendance",
           {
             student: student._id,
             date: selectedDate,

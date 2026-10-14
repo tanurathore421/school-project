@@ -7,7 +7,7 @@ function AdminProtectedRoute({ children }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/auth/admin", {
+      .get(" https://school-project-ql8x.onrender.com/api/auth/admin", {
         withCredentials: true,
       })
       .then(() => {

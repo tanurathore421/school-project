@@ -11,7 +11,7 @@ function Attendance() {
     const getAttendance = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/student/attendance",
+          " https://school-project-ql8x.onrender.com/api/student/attendance",
           {
             withCredentials: true,
           }

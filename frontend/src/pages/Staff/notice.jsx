@@ -16,7 +16,7 @@ function Notices() {
       setLoading(true);
 
       const response = await axios.get(
-        "http://localhost:3000/api/staff/notices",
+        " https://school-project-ql8x.onrender.com/api/staff/notices",
         {
           withCredentials: true,
         }
@@ -45,7 +45,7 @@ function Notices() {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/staff/notices",
+        " https://school-project-ql8x.onrender.com/api/staff/notices",
         {
           title,
           message,
@@ -80,7 +80,7 @@ function Notices() {
 
     try {
       await axios.delete(
-        `http://localhost:3000/api/staff/notices/${id}`,
+        ` https://school-project-ql8x.onrender.com/api/staff/notices/${id}`,
         {
           withCredentials: true,
         }

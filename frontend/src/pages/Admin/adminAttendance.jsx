@@ -23,7 +23,7 @@ function AdminAttendance() {
   const fetchStudents = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/admin/students",
+        " https://school-project-ql8x.onrender.com/api/admin/students",
         { withCredentials: true }
       );
 
@@ -36,7 +36,7 @@ function AdminAttendance() {
   const fetchStaff = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/admin/staff",
+        " https://school-project-ql8x.onrender.com/api/admin/staff",
         { withCredentials: true }
       );
 
@@ -49,7 +49,7 @@ function AdminAttendance() {
   const fetchAttendance = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/admin/attendance",
+        " https://school-project-ql8x.onrender.com/api/admin/attendance",
         { withCredentials: true }
       );
 
@@ -62,7 +62,7 @@ function AdminAttendance() {
   const fetchStaffAttendance = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/admin/staff-attendance",
+        " https://school-project-ql8x.onrender.com/api/admin/staff-attendance",
         { withCredentials: true }
       );
 
@@ -77,7 +77,7 @@ function AdminAttendance() {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/admin/attendance",
+        " https://school-project-ql8x.onrender.com/api/admin/attendance",
         {
           student: studentId,
           date,
@@ -103,7 +103,7 @@ function AdminAttendance() {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/admin/staff-attendance",
+        " https://school-project-ql8x.onrender.com/api/admin/staff-attendance",
         {
           staff: staffId,
           date,

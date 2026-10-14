@@ -10,7 +10,7 @@ function StudentProtectedRoute({ children }) {
     const checkStudent = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/auth/student",
+          " https://school-project-ql8x.onrender.com/api/auth/student",
           {
             withCredentials: true,
           }

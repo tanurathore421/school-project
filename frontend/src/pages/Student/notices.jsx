@@ -10,7 +10,7 @@ function Notices() {
     const getNotices = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/student/notices",
+          " https://school-project-ql8x.onrender.com/api/student/notices",
           {
             withCredentials: true,
           }

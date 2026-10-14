@@ -30,7 +30,7 @@ function Results() {
       setLoading(true);
 
       const response = await axios.get(
-        `http://localhost:3000/api/staff/students?className=${selectedClass}&section=${selectedSection}`,
+        ` https://school-project-ql8x.onrender.com/api/staff/students?className=${selectedClass}&section=${selectedSection}`,
         {
           withCredentials: true,
         }
@@ -55,7 +55,7 @@ function Results() {
 
     try {
       const response = await axios.get(
-        `http://localhost:3000/api/staff/results/${studentId}`,
+        ` https://school-project-ql8x.onrender.com/api/staff/results/${studentId}`,
         {
           withCredentials: true,
         }
@@ -98,7 +98,7 @@ function Results() {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/staff/results",
+        " https://school-project-ql8x.onrender.com/api/staff/results",
         {
           student: selectedStudent,
           subject,

@@ -42,7 +42,7 @@ function AdminTimetable() {
   const fetchTimetable = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/admin/timetable",
+        " https://school-project-ql8x.onrender.com/api/admin/timetable",
         {
           withCredentials: true,
         }
@@ -57,7 +57,7 @@ function AdminTimetable() {
   const fetchStaff = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/admin/staff",
+        " https://school-project-ql8x.onrender.com/api/admin/staff",
         {
           withCredentials: true,
         }
@@ -107,7 +107,7 @@ function AdminTimetable() {
     try {
       if (editingId) {
         await axios.put(
-          `http://localhost:3000/api/admin/timetable/${editingId}`,
+          ` https://school-project-ql8x.onrender.com/api/admin/timetable/${editingId}`,
           formData,
           {
             withCredentials: true,
@@ -117,7 +117,7 @@ function AdminTimetable() {
         alert("Timetable updated successfully");
       } else {
         await axios.post(
-          "http://localhost:3000/api/admin/timetable",
+          " https://school-project-ql8x.onrender.com/api/admin/timetable",
           formData,
           {
             withCredentials: true,
@@ -172,7 +172,7 @@ function AdminTimetable() {
 
     try {
       await axios.delete(
-        `http://localhost:3000/api/admin/timetable/${id}`,
+        ` https://school-project-ql8x.onrender.com/api/admin/timetable/${id}`,
         {
           withCredentials: true,
         }

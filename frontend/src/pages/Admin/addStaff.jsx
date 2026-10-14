@@ -29,7 +29,7 @@ function AddStaff() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/admin/staff",
+        " https://school-project-ql8x.onrender.com/api/admin/staff",
         formData,
         {
           withCredentials: true,
