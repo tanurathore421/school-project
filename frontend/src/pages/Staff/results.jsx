@@ -18,7 +18,6 @@ function Results() {
 
   const [results, setResults] = useState([]);
 
-  const [loading, setLoading] = useState(false);
 
   const loadStudents = async () => {
     if (!selectedClass || !selectedSection) {
@@ -27,7 +26,7 @@ function Results() {
     }
 
     try {
-      setLoading(true);
+   
 
       const response = await axios.get(
         ` https://school-project-ql8x.onrender.com/api/staff/students?className=${selectedClass}&section=${selectedSection}`,
@@ -42,9 +41,7 @@ function Results() {
     } catch (error) {
       console.error("Failed to load students:", error);
       setStudents([]);
-    } finally {
-      setLoading(false);
-    }
+    } 
   };
 
   const loadResults = async (studentId) => {
